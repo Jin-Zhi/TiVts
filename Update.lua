@@ -20,7 +20,7 @@ if iscanupdt ~= version then
     end
     if canupdt == 2 then
         gg.alert("好的，正在从存储库调取数据")
-        dooutput(download,gg.getFile())
+        downloadfile(download)
         os.exit(gg.alert("请重启脚本"))
         print(download..gg.getFile())
     end
