@@ -1,0 +1,1 @@
+local l,a,d,f function s(f,t)l=io.open(f,"w")if l then l:write(t)l:close()end end function m()a=gg.prompt({"By今芷\n\n\nURL"},{""},{"text"})if a~=nil then d=gg.makeRequest(a[1]).content f=gg.getFile()..".html"s(f,d)else m()end end m()
